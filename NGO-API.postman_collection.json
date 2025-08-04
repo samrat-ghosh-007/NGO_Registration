@@ -1,1 +1,99 @@
 
+{
+	"info": {
+		"_postman_id": "c8d0def9-8a0e-4a76-bbfe-885f05be2858",
+		"name": "NGO Registration API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46620215",
+		"_collection_link": "https://samratghosh-109549.postman.co/workspace/Samrat-ghosh's-Workspace~704a5b17-5d99-494f-8d16-98ecbdc915b0/collection/46620215-c8d0def9-8a0e-4a76-bbfe-885f05be2858?action=share&source=collection_link&creator=46620215"
+	},
+	"item": [
+		{
+			"name": "Registering User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sayantan\",\r\n    \"email\":\"sayantan@example.com\",\r\n    \"password\": \"123456\",\r\n    \"role\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ngo-registration.onrender.com/api/register",
+					"protocol": "https",
+					"host": [
+						"ngo-registration",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sayantan@example.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ngo-registration.onrender.com/api/login",
+					"protocol": "https",
+					"host": [
+						"ngo-registration",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All User Details (Only for Admins)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ngo-registration.onrender.com/api/users",
+					"protocol": "https",
+					"host": [
+						"ngo-registration",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
