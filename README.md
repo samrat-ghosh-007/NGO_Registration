@@ -22,7 +22,7 @@ A Node.js + Express backend for managing NGO registrations, authentication, and 
 NGO-REGISTRATION/
 ├── config/ # Database and environment setup
 ├── controllers/ # Request handling logic
-├── middleware/ # Authentication and error handling
+├── middleware/ # Authentication 
 ├── models/ # Mongoose schemas for NGO and others
 ├── routes/ # All API route definitions
 ├── .env # Environment variables (not committed)
