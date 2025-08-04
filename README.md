@@ -4,6 +4,16 @@ A Node.js + Express backend for managing NGO registrations, authentication, and 
 
 ---
 
+## 🌐 Live Demo
+
+The backend is deployed and running on Render:
+
+🔗 [https://ngo-registration.onrender.com](https://ngo-registration.onrender.com)
+
+Use tools like **Postman** to test the API endpoints.
+
+---
+
 ## 🚀 Features
 
 - NGO registration and login
@@ -44,7 +54,7 @@ NGO-REGISTRATION/
 - JWT (JSON Web Token)
 - Bcrypt (password hashing)
 - Dotenv
-- CORS, Helmet, Morgan
+- CORS
 
 ---
 
@@ -85,6 +95,7 @@ npm run dev            # Start in development mode
 ## 🚀 Deployment
 
 🟣 On Render:
+
 Push code to GitHub
 
 Create a new Web Service on Render
