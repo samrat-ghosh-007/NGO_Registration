@@ -112,6 +112,37 @@ Deploy and test!
 
 ---
 
+## 🧪 API Testing with Postman
+
+This project includes a Postman collection for testing the NGO Registration API.
+
+### 🔗 Collection Overview
+
+The collection contains the following requests:
+- ✅ **Registering User** – `POST /api/register`
+- 🔐 **Login User** – `POST /api/login`
+- 👤 **Get All Users (Admin Only)** – `GET /api/users` (requires JWT token)
+
+### 📁 How to Use
+
+1. Open Postman.
+2. Click on `Import` and upload the file: NGO_API.postman_collection.json
+3. Set an environment variable for the JWT token:
+- Go to `Environment > Add`:
+  ```text
+  Variable: jwt_token
+  Initial Value: <paste your token here>
+  ```
+4. For the `GET /api/users` request, make sure to:
+- Use this header:
+  ```http
+  Authorization: Bearer {{jwt_token}}
+  ```
+
+---
+
+
+
 ## 📄 License
 
 MIT License
