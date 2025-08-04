@@ -18,23 +18,23 @@ A Node.js + Express backend for managing NGO registrations, authentication, and 
 
 ## 📁 Folder Structure
 
-NGO REGISTRATION/
-├── config/              
-├── controllers/          
-├── middleware/                
-├── models/           
-├── routes/                
-├── .env                    
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── server.js
-└── README.md
+```bash
+NGO-REGISTRATION/
+├── config/ # Database and environment setup
+├── controllers/ # Request handling logic
+├── middleware/ # Authentication and error handling
+├── models/ # Mongoose schemas for NGO and others
+├── routes/ # All API route definitions
+├── .env # Environment variables (not committed)
+├── .gitignore # Ignored files/folders (e.g., node_modules)
+├── package-lock.json # Locked dependency versions
+├── package.json # Project metadata and dependencies
+├── server.js # Entry point of the app
+└── README.md # This file
+```
 
 ---
 
-
----
 
 ## 🔧 Tech Stack
 
@@ -91,11 +91,11 @@ Create a new Web Service on Render
 
 Set:
 
-Build Command: npm install
+Build Command: `npm install`
 
-Start Command: npm start
+Start Command: `npm start`
 
-Environment: Add MONGO_URI, JWT_SECRET, NODE_ENV
+Environment: `Add MONGO_URI, JWT_SECRET, NODE_ENV`
 
 Deploy and test!
 
